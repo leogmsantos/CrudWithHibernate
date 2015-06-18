@@ -24,7 +24,7 @@ public class StudentController {
 		Student student = new Student();
 		map.put("student", student);
 		map.put("studentList", studentService.getAllStudent());
-		return "student";
+		return "students";
 	}
 	
 	@RequestMapping(value="/student.do", method=RequestMethod.POST)
@@ -51,7 +51,7 @@ public class StudentController {
 			break;
 		}
 		map.put("studentList", studentService.getAllStudent());
-		return "student";
+		return "students";
 	}
 	
 }
