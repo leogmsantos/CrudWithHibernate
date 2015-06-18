@@ -76,6 +76,4 @@ public class Student {
 		this.father = father;
 	}
 	
-	
-	
 }

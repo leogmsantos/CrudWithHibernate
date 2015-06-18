@@ -13,6 +13,8 @@ import org.springframework.web.bind.annotation.RequestParam;
 import br.com.crudwebapp.model.Student;
 import br.com.crudwebapp.services.StudentService;
 
+
+
 @Controller
 public class StudentController {
 
@@ -24,7 +26,7 @@ public class StudentController {
 		Student student = new Student();
 		map.put("student", student);
 		map.put("studentList", studentService.getAllStudent());
-		return "student";
+		return "students";
 	}
 	
 	@RequestMapping(value="/student.do", method=RequestMethod.POST)
@@ -51,7 +53,7 @@ public class StudentController {
 			break;
 		}
 		map.put("studentList", studentService.getAllStudent());
-		return "student";
+		return "students";
 	}
 	
 }
